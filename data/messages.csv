@@ -1,0 +1,45 @@
+message,label
+"Hey, are we still meeting at the cafe at 6 pm today?",safe
+"Your Amazon package has been shipped and will arrive tomorrow.",safe
+"Please review the attached project notes before the call.",safe
+"Thanks for your payment. Invoice received successfully.",safe
+"Lunch is confirmed for 1 pm near the office.",safe
+"Your OTP for grocery checkout is 482193. Do not share it.",safe
+"Reminder: the dentist appointment is scheduled for Friday morning.",safe
+"Team standup starts in 10 minutes. Join the conference room.",safe
+"I shared the document on Google Drive, please check when free.",safe
+"Your electricity bill payment was processed successfully.",safe
+"Flight check-in opens 24 hours before departure.",safe
+"Can you send me the latest presentation deck by tonight?",safe
+"Your library books are due next week. Renew online if needed.",safe
+"This is a confirmation for your movie tickets this evening.",safe
+"Happy birthday! Hope you have a great day ahead.",safe
+"URGENT: Update your bank KYC immediately to avoid service issues.",suspicious
+"You have won a gift voucher. Complete details to claim today.",suspicious
+"Final notice: verify your wallet account for uninterrupted access.",suspicious
+"There is unusual activity on your email. Confirm your identity now.",suspicious
+"Your account may be limited unless you review this message.",suspicious
+"Click the secure link to validate your recent transaction.",suspicious
+"Bank alert: confirm your debit card information within 30 minutes.",suspicious
+"We attempted to deliver a parcel. Reschedule by opening the link.",suspicious
+"Your tax refund is pending. Submit information to receive it.",suspicious
+"Warning: your profile will be disabled if you ignore this update.",suspicious
+"Congratulations! You are selected for a low-interest instant loan.",suspicious
+"Free recharge available today. Tap here before it expires.",suspicious
+"Dear user, your UPI account needs re-verification for security.",suspicious
+"Win cash now! Send your account number and OTP immediately.",malicious
+"Your bank account is blocked. Click here and enter password now.",malicious
+"Claim lottery reward by paying a small processing fee today.",malicious
+"Immediate action required. Share debit card PIN to unlock account.",malicious
+"You have been chosen for a prize. Open http://fake-prize.top now.",malicious
+"Security team alert: download attachment and sign in again.",malicious
+"Update your payroll details using this link and send the OTP.",malicious
+"Your package is held. Pay customs fee using the link below.",malicious
+"Act fast! Limited bonus if you confirm card number and CVV.",malicious
+"This is your final warning. Your account will close in 2 hours.",malicious
+"Reset your netbanking password here: http://verify-bank-login.cc",malicious
+"Your CEO needs gift cards immediately. Reply with the codes.",malicious
+"Install this urgent security patch from the attached file.",malicious
+"Earn daily cash from home. Register using your Aadhaar and PIN.",malicious
+"Your social account is compromised. Login using the emergency page.",malicious
+"Payment failed. Re-enter credit card details and OTP to continue.",malicious
