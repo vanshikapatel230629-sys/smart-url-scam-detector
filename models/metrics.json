@@ -1,0 +1,678 @@
+{
+  "project_name": "Smart URL & Scam Detector",
+  "labels": [
+    "safe",
+    "suspicious",
+    "malicious"
+  ],
+  "url_model": {
+    "name": "Random Forest",
+    "metrics": {
+      "accuracy": 0.9167,
+      "macro_f1": 0.8963,
+      "report": {
+        "malicious": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 4.0
+        },
+        "safe": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "suspicious": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3.0
+        },
+        "accuracy": 0.9166666666666666,
+        "macro avg": {
+          "precision": 0.9333333333333332,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.8962962962962964,
+          "support": 12.0
+        },
+        "weighted avg": {
+          "precision": 0.9333333333333332,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.912962962962963,
+          "support": 12.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ]
+    },
+    "candidates": {
+      "Logistic Regression": {
+        "accuracy": 0.8333,
+        "macro_f1": 0.766,
+        "report": {
+          "malicious": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 0.8333333333333334,
+            "recall": 1.0,
+            "f1-score": 0.9090909090909091,
+            "support": 5.0
+          },
+          "suspicious": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.5,
+            "support": 3.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8777777777777778,
+            "recall": 0.7777777777777778,
+            "f1-score": 0.765993265993266,
+            "support": 12.0
+          },
+          "weighted avg": {
+            "precision": 0.8638888888888889,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8000841750841751,
+            "support": 12.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.9167,
+        "macro_f1": 0.8963,
+        "report": {
+          "malicious": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+          },
+          "suspicious": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.8,
+            "support": 3.0
+          },
+          "accuracy": 0.9166666666666666,
+          "macro avg": {
+            "precision": 0.9333333333333332,
+            "recall": 0.8888888888888888,
+            "f1-score": 0.8962962962962964,
+            "support": 12.0
+          },
+          "weighted avg": {
+            "precision": 0.9333333333333332,
+            "recall": 0.9166666666666666,
+            "f1-score": 0.912962962962963,
+            "support": 12.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "Naive Bayes": {
+        "accuracy": 0.6667,
+        "macro_f1": 0.6111,
+        "report": {
+          "malicious": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1-score": 0.3333333333333333,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+          },
+          "suspicious": {
+            "precision": 0.4,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.5,
+            "support": 3.0
+          },
+          "accuracy": 0.6666666666666666,
+          "macro avg": {
+            "precision": 0.6333333333333333,
+            "recall": 0.6388888888888888,
+            "f1-score": 0.611111111111111,
+            "support": 12.0
+          },
+          "weighted avg": {
+            "precision": 0.6833333333333332,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.6527777777777778,
+            "support": 12.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            1
+          ]
+        ]
+      },
+      "SVM": {
+        "accuracy": 0.9167,
+        "macro_f1": 0.8963,
+        "report": {
+          "malicious": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+          },
+          "suspicious": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.8,
+            "support": 3.0
+          },
+          "accuracy": 0.9166666666666666,
+          "macro avg": {
+            "precision": 0.9333333333333332,
+            "recall": 0.8888888888888888,
+            "f1-score": 0.8962962962962964,
+            "support": 12.0
+          },
+          "weighted avg": {
+            "precision": 0.9333333333333332,
+            "recall": 0.9166666666666666,
+            "f1-score": 0.912962962962963,
+            "support": 12.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ]
+      }
+    },
+    "feature_importance": [
+      {
+        "feature": "uses_https",
+        "importance": 0.5564127130453314
+      },
+      {
+        "feature": "has_hyphen",
+        "importance": 0.5527838406987311
+      },
+      {
+        "feature": "host_length",
+        "importance": 0.5362435588755914
+      },
+      {
+        "feature": "subdomain_count",
+        "importance": 0.5353967780713711
+      },
+      {
+        "feature": "risky_token_count",
+        "importance": 0.525603492029211
+      },
+      {
+        "feature": "dot_count",
+        "importance": 0.5006001839546876
+      },
+      {
+        "feature": "url_length",
+        "importance": 0.400999560661254
+      },
+      {
+        "feature": "suspicious_tld",
+        "importance": 0.30464290011943107
+      },
+      {
+        "feature": "double_slash_count",
+        "importance": 0.1649882538138545
+      },
+      {
+        "feature": "ampersand_count",
+        "importance": 0.09267709680971503
+      }
+    ],
+    "distribution": {
+      "malicious": 14,
+      "safe": 18,
+      "suspicious": 13
+    }
+  },
+  "text_model": {
+    "name": "SVM",
+    "metrics": {
+      "accuracy": 0.8182,
+      "macro_f1": 0.8056,
+      "report": {
+        "malicious": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1-score": 0.6666666666666666,
+          "support": 4.0
+        },
+        "safe": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4.0
+        },
+        "suspicious": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1-score": 0.75,
+          "support": 3.0
+        },
+        "accuracy": 0.8181818181818182,
+        "macro avg": {
+          "precision": 0.8666666666666667,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8055555555555555,
+          "support": 11.0
+        },
+        "weighted avg": {
+          "precision": 0.890909090909091,
+          "recall": 0.8181818181818182,
+          "f1-score": 0.8106060606060606,
+          "support": 11.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ]
+    },
+    "candidates": {
+      "Logistic Regression": {
+        "accuracy": 0.6364,
+        "macro_f1": 0.6111,
+        "report": {
+          "malicious": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1-score": 0.3333333333333333,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "suspicious": {
+            "precision": 0.4,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.5,
+            "support": 3.0
+          },
+          "accuracy": 0.6363636363636364,
+          "macro avg": {
+            "precision": 0.6333333333333333,
+            "recall": 0.6388888888888888,
+            "f1-score": 0.611111111111111,
+            "support": 11.0
+          },
+          "weighted avg": {
+            "precision": 0.6545454545454545,
+            "recall": 0.6363636363636364,
+            "f1-score": 0.6212121212121212,
+            "support": 11.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            1
+          ]
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.8182,
+        "macro_f1": 0.7667,
+        "report": {
+          "malicious": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 4.0
+          },
+          "suspicious": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.5,
+            "support": 3.0
+          },
+          "accuracy": 0.8181818181818182,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.7777777777777778,
+            "f1-score": 0.7666666666666666,
+            "support": 11.0
+          },
+          "weighted avg": {
+            "precision": 0.8787878787878788,
+            "recall": 0.8181818181818182,
+            "f1-score": 0.7909090909090909,
+            "support": 11.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "Naive Bayes": {
+        "accuracy": 0.6364,
+        "macro_f1": 0.6111,
+        "report": {
+          "malicious": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+          },
+          "suspicious": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.5,
+            "support": 3.0
+          },
+          "accuracy": 0.6363636363636364,
+          "macro avg": {
+            "precision": 0.8333333333333334,
+            "recall": 0.611111111111111,
+            "f1-score": 0.611111111111111,
+            "support": 11.0
+          },
+          "weighted avg": {
+            "precision": 0.8181818181818182,
+            "recall": 0.6363636363636364,
+            "f1-score": 0.6212121212121212,
+            "support": 11.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "SVM": {
+        "accuracy": 0.8182,
+        "macro_f1": 0.8056,
+        "report": {
+          "malicious": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+          },
+          "safe": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "suspicious": {
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1-score": 0.75,
+            "support": 3.0
+          },
+          "accuracy": 0.8181818181818182,
+          "macro avg": {
+            "precision": 0.8666666666666667,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8055555555555555,
+            "support": 11.0
+          },
+          "weighted avg": {
+            "precision": 0.890909090909091,
+            "recall": 0.8181818181818182,
+            "f1-score": 0.8106060606060606,
+            "support": 11.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    "feature_importance": [
+      {
+        "feature": "signals__credential_term_count",
+        "importance": 17.290099715099714
+      },
+      {
+        "feature": "signals__digit_count",
+        "importance": 14.245897435897437
+      },
+      {
+        "feature": "signals__security_term_count",
+        "importance": 13.719999999999999
+      },
+      {
+        "feature": "signals__urgent_term_count",
+        "importance": 8.802884615384617
+      },
+      {
+        "feature": "signals__reward_term_count",
+        "importance": 6.521153846153847
+      },
+      {
+        "feature": "signals__has_link",
+        "importance": 3.58974358974359
+      },
+      {
+        "feature": "tfidf__using",
+        "importance": 1.567543177692631
+      },
+      {
+        "feature": "tfidf__successfully",
+        "importance": 1.2809857993963338
+      },
+      {
+        "feature": "tfidf__information",
+        "importance": 1.2487559845429779
+      },
+      {
+        "feature": "tfidf__urltoken",
+        "importance": 1.2172623850609736
+      },
+      {
+        "feature": "tfidf__pm",
+        "importance": 1.1877820935586696
+      },
+      {
+        "feature": "tfidf__password",
+        "importance": 1.1238386467079824
+      },
+      {
+        "feature": "tfidf__check",
+        "importance": 1.0693049338421434
+      },
+      {
+        "feature": "tfidf__using link",
+        "importance": 0.9445341728488627
+      },
+      {
+        "feature": "tfidf__enter",
+        "importance": 0.9418466252051144
+      }
+    ],
+    "distribution": {
+      "malicious": 16,
+      "safe": 15,
+      "suspicious": 13
+    }
+  },
+  "examples": {
+    "safe_url": "https://www.google.com/search?q=cybersecurity",
+    "malicious_url": "http://secure-login@verify-bank.ru/reset",
+    "safe_message": "Your monthly subscription payment was received successfully.",
+    "malicious_message": "Urgent! Verify your bank account and share OTP to avoid suspension."
+  }
+}
